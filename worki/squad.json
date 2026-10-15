@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "orchestrator_base": "specialized/agents-orchestrator.md",
+  "stages": [
+    {
+      "id": "01-evidencias",
+      "agents": [
+        "research/research-synthesist.md",
+        "testing/testing-evidence-collector.md"
+      ],
+      "skill": ".agents/skills/01-evidencias/SKILL.md",
+      "output": "01-evidencias.md",
+      "requires": []
+    },
+    {
+      "id": "02-concorrentes",
+      "agents": [
+        "product/product-trend-researcher.md",
+        "research/research-synthesist.md"
+      ],
+      "skill": ".agents/skills/02-concorrentes/SKILL.md",
+      "output": "02-concorrentes.md",
+      "requires": [
+        "01-evidencias"
+      ]
+    },
+    {
+      "id": "03-posicionamento",
+      "agents": [
+        "design/design-brand-guardian.md",
+        "sales/sales-proposal-strategist.md"
+      ],
+      "skill": ".agents/skills/03-posicionamento/SKILL.md",
+      "output": "03-posicionamento.md",
+      "requires": [
+        "02-concorrentes"
+      ]
+    },
+    {
+      "id": "04-ofertas",
+      "agents": [
+        "sales/sales-offer-lead-gen-strategist.md"
+      ],
+      "skill": ".agents/skills/04-ofertas/SKILL.md",
+      "output": "04-ofertas.md",
+      "requires": [
+        "03-posicionamento"
+      ]
+    },
+    {
+      "id": "05-copywriting",
+      "agents": [
+        "marketing/marketing-content-creator.md"
+      ],
+      "skill": ".agents/skills/05-copywriting/SKILL.md",
+      "output": "05-copywriting.md",
+      "requires": [
+        "04-ofertas"
+      ]
+    },
+    {
+      "id": "06-cro",
+      "agents": [
+        "marketing/marketing-growth-hacker.md",
+        "design/design-ux-researcher.md"
+      ],
+      "skill": ".agents/skills/06-cro/SKILL.md",
+      "output": "06-cro.md",
+      "requires": [
+        "05-copywriting"
+      ]
+    },
+    {
+      "id": "07-ux-ui",
+      "agents": [
+        "design/design-ux-researcher.md",
+        "design/design-ux-architect.md",
+        "design/design-ui-designer.md"
+      ],
+      "skill": ".agents/skills/07-ux-ui/SKILL.md",
+      "output": "07-ux-ui.md",
+      "requires": [
+        "06-cro"
+      ]
+    },
+    {
+      "id": "08-desenvolvimento",
+      "agents": [
+        "engineering/engineering-frontend-developer.md",
+        "testing/testing-accessibility-auditor.md"
+      ],
+      "skill": ".agents/skills/08-desenvolvimento/SKILL.md",
+      "output": "08-plano-tecnico.md",
+      "requires": [
+        "07-ux-ui"
+      ]
+    },
+    {
+      "id": "09-diagnostico-plano",
+      "agents": [
+        "research/research-synthesist.md",
+        "testing/testing-evidence-collector.md"
+      ],
+      "skill": ".agents/skills/09-diagnostico-plano/SKILL.md",
+      "output": "09-diagnostico-plano.md",
+      "requires": [
+        "08-desenvolvimento"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: Validate Worki Squad
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate generated Codex agents
+        run: |
+          python3 scripts/generate_codex_agents.py --check
+          python3 scripts/discover_codex_agents.py
+      - name: Validate Worki structure and workflow
+        run: |
+          python3 scripts/validate.py
+          python3 -m unittest discover -s tests -v

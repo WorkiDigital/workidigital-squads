@@ -1,0 +1,16 @@
+{
+  "cliente": "PREENCHER",
+  "run": "PREENCHER",
+  "etapa": "PREENCHER",
+  "status": "parcial",
+  "resumo": "PREENCHER",
+  "claims": [],
+  "lacunas": [
+    "PREENCHER"
+  ],
+  "revisao": {
+    "responsavel": "PREENCHER",
+    "data": "PREENCHER",
+    "parecer": "pendente"
+  }
+}

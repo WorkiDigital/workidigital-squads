@@ -1,0 +1,54 @@
+{
+  "cliente": "PREENCHER",
+  "run": "PREENCHER",
+  "modo": "diagnostico",
+  "etapas": {
+    "01-evidencias": {
+      "status": "pendente",
+      "arquivo": "01-evidencias.md",
+      "bloqueio": null
+    },
+    "02-concorrentes": {
+      "status": "pendente",
+      "arquivo": "02-concorrentes.md",
+      "bloqueio": null
+    },
+    "03-posicionamento": {
+      "status": "pendente",
+      "arquivo": "03-posicionamento.md",
+      "bloqueio": null
+    },
+    "04-ofertas": {
+      "status": "pendente",
+      "arquivo": "04-ofertas.md",
+      "bloqueio": null
+    },
+    "05-copywriting": {
+      "status": "pendente",
+      "arquivo": "05-copywriting.md",
+      "bloqueio": null
+    },
+    "06-cro": {
+      "status": "pendente",
+      "arquivo": "06-cro.md",
+      "bloqueio": null
+    },
+    "07-ux-ui": {
+      "status": "pendente",
+      "arquivo": "07-ux-ui.md",
+      "bloqueio": null
+    },
+    "08-desenvolvimento": {
+      "status": "pendente",
+      "arquivo": "08-plano-tecnico.md",
+      "bloqueio": null
+    },
+    "09-diagnostico-plano": {
+      "status": "pendente",
+      "arquivo": "09-diagnostico-plano.md",
+      "bloqueio": null
+    }
+  },
+  "proxima_acao": "Confirmar briefing e coletar evidências públicas",
+  "aprovacoes": []
+}

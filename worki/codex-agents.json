@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "output_dir": ".codex/agents",
+  "orchestrator": {
+    "slug": "worki-marketing-orchestrator",
+    "name": "Worki Marketing Orchestrator",
+    "description": "Coordena o squad Worki de diagnóstico e execução de marketing, com evidências, isolamento por cliente e gates de aprovação.",
+    "sources": [
+      "specialized/agents-orchestrator.md",
+      "agents/orquestrador.md",
+      ".agents/skills/marketing-squad/SKILL.md"
+    ]
+  },
+  "agents": [
+    {
+      "stage": "01-evidencias",
+      "slug": "worki-evidence-researcher",
+      "name": "Worki Evidence Researcher",
+      "description": "Coleta, qualifica e registra evidências públicas verificáveis antes de qualquer diagnóstico."
+    },
+    {
+      "stage": "02-concorrentes",
+      "slug": "worki-competitive-analyst",
+      "name": "Worki Competitive Analyst",
+      "description": "Analisa mercado, concorrentes diretos e indiretos, padrões e espaços de diferenciação."
+    },
+    {
+      "stage": "03-posicionamento",
+      "slug": "worki-brand-positioning-strategist",
+      "name": "Worki Brand Positioning Strategist",
+      "description": "Define posicionamento, proposta de valor, diferenciação, voz e arquitetura de mensagens."
+    },
+    {
+      "stage": "04-ofertas",
+      "slug": "worki-offer-architect",
+      "name": "Worki Offer Architect",
+      "description": "Diagnostica e reconstrói ofertas, escopo, risco, objeções e experimentos de validação."
+    },
+    {
+      "stage": "05-copywriting",
+      "slug": "worki-conversion-copywriter",
+      "name": "Worki Conversion Copywriter",
+      "description": "Cria mensagens e copy de conversão rastreáveis, sem promessas ou provas inventadas."
+    },
+    {
+      "stage": "06-cro",
+      "slug": "worki-cro-specialist",
+      "name": "Worki CRO Specialist",
+      "description": "Mapeia jornadas, fricções, hipóteses e experimentos de conversão com medição adequada."
+    },
+    {
+      "stage": "07-ux-ui",
+      "slug": "worki-ux-ui-specialist",
+      "name": "Worki UX UI Specialist",
+      "description": "Projeta arquitetura de informação, wireframes, sistemas visuais responsivos e acessíveis."
+    },
+    {
+      "stage": "08-desenvolvimento",
+      "slug": "worki-website-developer",
+      "name": "Worki Website Developer",
+      "description": "Planeja e implementa sites responsivos, acessíveis e mensuráveis somente após aprovação."
+    },
+    {
+      "stage": "09-diagnostico-plano",
+      "slug": "worki-diagnostic-reviewer",
+      "name": "Worki Diagnostic Reviewer",
+      "description": "Consolida evidências, diagnóstico, problemas, oportunidades, prioridades e plano de execução."
+    }
+  ]
+}
